@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist OST</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="album-cover">
+        <img
+          src="./castlevania lords of shadow cover.jpg"
+          alt="Capa do Álbum"
+        />
+      </div>
+      <div class="track-info">
+        <h2>The Ice Titan</h2>
+        <h3>Castlevania Lords of Shadow OST</h3>
+      </div>
+      <audio
+        id="audio"
+        src="./Castlevania Lords Of Shadow OST - The Ice Titan.mp3"
+      ></audio>
+      
+      <div class="controls">
+        <button id="prevBtn">&#9664;&#9664;</button>
+        <button id="playPauseBtn">&#9654;</button>
+        <button id="nextBtn">&#9654;&#9654;</button>
+      </div>
+      <div class="time-controls">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+    </div>
+      <input type="range" id="seekBar" value="0" max="100" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
